@@ -193,6 +193,9 @@ public class StartLayout {
 
 		File fdir3 = new File("dir");
 		if ( !fdir3.exists() ) { fdir3.mkdir(); }
+
+		File fdir4 = new File("Places");
+		if ( !fdir4.exists() ) { fdir4.mkdir(); }
 	}
 	
 	void setImages() {
