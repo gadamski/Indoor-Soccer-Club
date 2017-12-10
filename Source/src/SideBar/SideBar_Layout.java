@@ -108,7 +108,7 @@ public class SideBar_Layout implements ActionListener {
 
 		if ( e.getSource() == Menu_Overview && Paket.User.Login == true ) {
 						
-			Layout_13Overview.OpenSide();
+			Layout_13Overview.OpenSide(false);
 		}
 
 		if ( e.getSource() == Menu_Register ) {
