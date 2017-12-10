@@ -206,7 +206,7 @@ public class Layout_11Profile implements ActionListener {
 		
 		// Layout 
 		
-		StartLayout.L_Profile.add(Profile_Picture);
+	//	StartLayout.L_Profile.add(Profile_Picture);
 		Profile_Picture.add(Profile_Picture_but);
 
 		StartLayout.L_Profile.add(Profile_PersonID);

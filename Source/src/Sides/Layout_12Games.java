@@ -81,19 +81,19 @@ public class Layout_12Games implements ActionListener {
 		
 		Font Font_button = new Font("Arial", Font.BOLD, 18);
 
-		Games_Teamsize01_But.setText("3 vs 3");
+		Games_Teamsize01_But.setText("4 vs 4");
 		Games_Teamsize01_But.addActionListener(this);
 		Games_Teamsize01_But.setBackground(new Color(175,196,216));
 		Games_Teamsize01_But.setBounds(240,95,110,40);
 		Games_Teamsize01_But.setFont(Font_button);
 
-		Games_Teamsize02_But.setText("4 vs 4");
+		Games_Teamsize02_But.setText("6 vs 6");
 		Games_Teamsize02_But.addActionListener(this);
 		Games_Teamsize02_But.setBackground(new Color(167,210,168));
 		Games_Teamsize02_But.setBounds(380,95,110,40);
 		Games_Teamsize02_But.setFont(Font_button);
 
-		Games_Teamsize03_But.setText("5 vs. 5");
+		Games_Teamsize03_But.setText("8 vs. 8");
 		Games_Teamsize03_But.addActionListener(this);
 		Games_Teamsize03_But.setBackground(new Color(167,210,168));
 		Games_Teamsize03_But.setBounds(520,95,110,40);
@@ -192,7 +192,6 @@ public class Layout_12Games implements ActionListener {
 					Place[hall][place][0] = Hall[hall][count+1];
 					Place[hall][place][1] = Hall[hall][count+2];
 					System.out.println("Place: " + Place[hall][place][0] + ", " + Place[hall][place][1]);
-					System.out.println("x: " + hall + ", y: " + place);
 					place++;
 				}
 
@@ -222,8 +221,6 @@ public class Layout_12Games implements ActionListener {
 			s = Place[hall][count][1];
 				
 			while(s != null) {
-
-				System.out.println("s: " + s);
 				
 				if ( Placesize == 1 && s.equals("S") ) {
 					
@@ -251,11 +248,6 @@ public class Layout_12Games implements ActionListener {
 		}
 		
 		System.out.println("placefound: " + placefound);
-		for(int i=0; i<placefound; i++) { 
-		
-			System.out.println(PlaceSearchFound[i][0]); 
-			System.out.println(PlaceSearchFound[i][1]); 
-		}
 		
 		MaxPlace = placefound;
 		ViewPlaceOverview = 1;

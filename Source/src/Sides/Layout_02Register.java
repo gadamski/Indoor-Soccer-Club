@@ -119,8 +119,8 @@ public class Layout_02Register implements ActionListener {
 
 		Register_Safe.setText("Speichern");
 		Register_Safe.addActionListener(this);
-		Register_Safe.setBackground(new Color(176,208,233));
-		Register_Safe.setBounds(407,340,180,40);
+		Register_Safe.setBackground(new Color(167,210,168));
+		Register_Safe.setBounds(30,410,170,40);
 		Register_Safe.setFont(Font_button);
 		
 		Register_OpenPic.setOpaque(false);
@@ -138,8 +138,8 @@ public class Layout_02Register implements ActionListener {
 		
 		// Laoyut 
 		
-		StartLayout.L_Register.add(Register_OpenPic);
-		StartLayout.L_Register.add(Register_Picture);
+	//	StartLayout.L_Register.add(Register_OpenPic);
+	//	StartLayout.L_Register.add(Register_Picture);
 
 		StartLayout.L_Register.add(Register_Firstname);
 		StartLayout.L_Register.add(Register_Firstname_Tf);

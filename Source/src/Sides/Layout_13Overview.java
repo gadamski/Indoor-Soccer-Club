@@ -73,10 +73,12 @@ public class Layout_13Overview implements ActionListener {
 		Overview_Adress_2.setFont(Font_label);
 		
 		Overview_Place.setText("Platz:");
+		Overview_Place.setForeground(new Color(0,148,255));
 		Overview_Place.setBounds(200,240,350,50);
 		Overview_Place.setFont(Font_label);
 
 		Overview_Place_2.setText("<keine Daten vorhanden>");
+		Overview_Place_2.setForeground(new Color(0,148,255));
 		Overview_Place_2.setBounds(320,240,400,50);
 		Overview_Place_2.setFont(Font_label);
 		
@@ -249,6 +251,7 @@ public class Layout_13Overview implements ActionListener {
 		if ( e.getSource() == Overview_Accept ) {
 			
 			OpenSide(false);
+			User.UpdatePlayGames();
 		}
 		
 		if ( e.getSource() == Overview_Previous ) {

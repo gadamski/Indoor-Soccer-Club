@@ -51,7 +51,7 @@ public class Layout_03Start {
 		TextLine06.setBounds(30,150+50*5,1200,50);
 		TextLine06.setFont(Font_label_extra);
 
-		TextLine07.setText("und gestartet werden.");
+		TextLine07.setText("und auf der rechten Seite die Gruppen gebildet werden.");
 		TextLine07.setBounds(30,150+50*6,1200,50);
 		TextLine07.setFont(Font_label_extra);
 
