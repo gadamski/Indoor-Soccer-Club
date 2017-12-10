@@ -40,7 +40,7 @@ public class SafeUser {
 			fw.write(Layout_02Register.Register_Town_Tf.getText() + "\n");
 
 			fw.write(data + "\n");
-			fw.write("0" + "\n");
+			fw.write(User.User_Data[7] + "\n");
 			
 			fw.close();
 			
