@@ -49,7 +49,7 @@ public class GroupBar_01CreateGroup implements ActionListener {
 		// InternalFrame
 		
 		Group_Create.setBounds(30,30,420,150);
-		try { Group_Create.setMaximum(true); } catch (Exception e) { }
+	//	try { Group_Create.setMaximum(true); } catch (Exception e) { }
 		Group_Create.setVisible(false);
 
 		// Buttons
@@ -92,7 +92,7 @@ public class GroupBar_01CreateGroup implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 		if ( e.getSource() == Group_CreateGroup_But ) {
-			
+						
 			Group_CreateGroup_Tf.setBackground(new Color(255,255,255));
 			
 			if ( !Group_CreateGroup_Tf.getText().equals("") ) {

@@ -53,7 +53,7 @@ public class GroupBar_02EnterGroup implements ActionListener {
 		// InternalFrame
 		
 		Group_Enter.setBounds(30,200,420,150);
-		try { Group_Enter.setMaximum(true); } catch (Exception e) { }
+	//	try { Group_Enter.setMaximum(true); } catch (Exception e) { }
 		Group_Enter.setVisible(false);
 
 		// Buttons
@@ -136,7 +136,7 @@ public class GroupBar_02EnterGroup implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 		if ( e.getSource() == Group_EnterGroup_But ) {
-			
+				
 			GroupBar_Layout.Escape_Group(); 
 			
 			User.User_Group[0] = (String) Group_EnterGroup_Box.getSelectedItem();

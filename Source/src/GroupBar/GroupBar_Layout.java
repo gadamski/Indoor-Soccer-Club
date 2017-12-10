@@ -9,6 +9,7 @@ import javax.swing.*;
 
 import Paket.StartLayout;
 import Paket.User;
+import Sides.Layout_03Start;
 
 public class GroupBar_Layout implements ActionListener {
 	
@@ -158,6 +159,8 @@ public class GroupBar_Layout implements ActionListener {
 
 		if ( e.getSource() == Group_Create && User.InGroup == false ) {
 			
+			Layout_03Start.OpenSide();
+
 			if ( CloseCreateGroup == true ) {
 				
 				CloseCreateGroup = false;
@@ -170,6 +173,8 @@ public class GroupBar_Layout implements ActionListener {
 		
 		if ( e.getSource() == Group_Enter ) {
 			
+			Layout_03Start.OpenSide();
+
 			GroupBar_02EnterGroup.OpenSide();
 		}
 	}
