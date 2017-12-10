@@ -3,6 +3,8 @@ package Paket;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+import Extern.SafeUser;
+
 public class User {
 	
 	public static boolean Login = false;
@@ -71,6 +73,18 @@ public class User {
 			CurrentSideNumber++;
 			OpenSides[CurrentSideNumber] = Number;
 		}		
+	}
+	
+	public static void UpdatePlayGames() {
+		
+		int i = Integer.parseInt(User_Data[7]);
+		i++;
+
+		User_Data[7] = i + "";
+		SafeUser.SafeUserFromEdit();
+		
+		String file = "Users/" + User.User_Data[2] + ".usr";			
+		StartLayout.UploadFile(file, file);
 	}
 
 }

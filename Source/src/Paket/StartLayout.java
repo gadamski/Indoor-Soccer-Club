@@ -58,7 +58,7 @@ public class StartLayout {
 	
 	public static String IP_Adress = "";
 			
-	Timer t = new Timer(3000, new CalculateLayout());
+	Timer t = new Timer(1000, new CalculateLayout());
 
 	public StartLayout() {
 		
